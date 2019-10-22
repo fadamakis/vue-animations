@@ -6,9 +6,10 @@
     <StateTransitions />
     <ListTransitions />
 
+    <ModalTransitions />
+
     <h2>menu item underline</h2>
     <h2>image hover</h2>
-    <h2>modal</h2>
     <h2>progress bar</h2>
     <h2>loader</h2>
     <h2>Card appear effect</h2>
@@ -19,13 +20,15 @@
 import ExpandCollapse from "./components/ExpandCollapse.vue";
 import StateTransitions from "./components/StateTransitions.vue";
 import ListTransitions from "./components/ListTransitions.vue";
+import ModalTransitions from "./components/ModalTransitions.vue";
 
 export default {
   name: "app",
   components: {
     ExpandCollapse,
     StateTransitions,
-    ListTransitions
+    ListTransitions,
+    ModalTransitions
   }
 };
 </script>
