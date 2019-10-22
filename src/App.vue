@@ -1,14 +1,11 @@
 <template>
   <div id="app">
     <img alt="Vue logo" src="./assets/logo.png" width="120">
-    <h1>Vue.js Real Life Transitions & microinteractions</h1>
+    <h1>Vue.js Real Life Transitions &amp; microinteractions</h1>
     <ExpandCollapse />
     <StateTransitions />
     <ListTransitions />
-
     <ModalTransitions />
-
-    <h2>menu item underline</h2>
     <h2>image hover</h2>
     <h2>progress bar</h2>
     <h2>loader</h2>
@@ -62,7 +59,7 @@ button + button {
 }
 
 button:hover {
-  color: #fff;
+  color: #ffffff;
   background-color: #4fc08d;
 }
 
