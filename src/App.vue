@@ -7,12 +7,12 @@
     <ListTransitions />
 
     <ModalTransitions />
+    <CardAppearAnimation />
 
     <h2>menu item underline</h2>
     <h2>image hover</h2>
     <h2>progress bar</h2>
     <h2>loader</h2>
-    <h2>Card appear effect</h2>
   </div>
 </template>
 
@@ -21,6 +21,7 @@ import ExpandCollapse from "./components/ExpandCollapse.vue";
 import StateTransitions from "./components/StateTransitions.vue";
 import ListTransitions from "./components/ListTransitions.vue";
 import ModalTransitions from "./components/ModalTransitions.vue";
+import CardAppearAnimation from "./components/CardAppearAnimation.vue";
 
 export default {
   name: "app",
@@ -28,7 +29,8 @@ export default {
     ExpandCollapse,
     StateTransitions,
     ListTransitions,
-    ModalTransitions
+    ModalTransitions,
+    CardAppearAnimation
   }
 };
 </script>
