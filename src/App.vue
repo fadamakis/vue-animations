@@ -6,11 +6,12 @@
     <StateTransitions />
     <ListTransitions />
     <ModalTransitions />
+    <CardAppearAnimation />
     <ExpandCollapse />
+
     <h2>image hover</h2>
     <h2>progress bar</h2>
     <h2>loader</h2>
-    <h2>Card appear effect</h2>
   </div>
 </template>
 
@@ -19,6 +20,7 @@ import SlideToggle from "./components/SlideToggle.vue";
 import StateTransitions from "./components/StateTransitions.vue";
 import ListTransitions from "./components/ListTransitions.vue";
 import ModalTransitions from "./components/ModalTransitions.vue";
+import CardAppearAnimation from "./components/CardAppearAnimation.vue";
 import ExpandCollapse from "./components/ExpandCollapse.vue";
 
 export default {
@@ -28,6 +30,7 @@ export default {
     StateTransitions,
     ListTransitions,
     ModalTransitions,
+    CardAppearAnimation,
     ExpandCollapse
   }
 };
