@@ -1,15 +1,14 @@
 <template>
   <div id="app">
     <img alt="Vue logo" src="./assets/logo.png" width="120">
-    <h1>Vue.js Real Life Transitions & microinteractions</h1>
-    <ExpandCollapse />
+    <h1>Vue.js Real Life Transitions &amp; microinteractions</h1>
+    <SlideToggle />
     <StateTransitions />
     <ListTransitions />
-
     <ModalTransitions />
     <CardAppearAnimation />
+    <ExpandCollapse />
 
-    <h2>menu item underline</h2>
     <h2>image hover</h2>
     <h2>progress bar</h2>
     <h2>loader</h2>
@@ -17,20 +16,22 @@
 </template>
 
 <script>
-import ExpandCollapse from "./components/ExpandCollapse.vue";
+import SlideToggle from "./components/SlideToggle.vue";
 import StateTransitions from "./components/StateTransitions.vue";
 import ListTransitions from "./components/ListTransitions.vue";
 import ModalTransitions from "./components/ModalTransitions.vue";
 import CardAppearAnimation from "./components/CardAppearAnimation.vue";
+import ExpandCollapse from "./components/ExpandCollapse.vue";
 
 export default {
   name: "app",
   components: {
-    ExpandCollapse,
+    SlideToggle,
     StateTransitions,
     ListTransitions,
     ModalTransitions,
-    CardAppearAnimation
+    CardAppearAnimation,
+    ExpandCollapse
   }
 };
 </script>
@@ -64,7 +65,7 @@ button + button {
 }
 
 button:hover {
-  color: #fff;
+  color: #ffffff;
   background-color: #4fc08d;
 }
 

@@ -4,10 +4,11 @@
       <header>
         <h2>Card Animation</h2>
       </header>
-      <button @click="toggle('list')">Play again</button>
+      <button @click="shown++">Add</button>
+      <button @click="shown--">Remove</button>
       <div>
         <transition-group name="slideLeft">
-          <div class="box" v-for="index in 5" :key="index">{{index}}</div>
+          <div class="box" v-for="index in shown" :key="index">{{index}}</div>
         </transition-group>
       </div>
     </article>
@@ -18,6 +19,7 @@
 export default {
   data() {
     return {
+      shown: 2,
       hidden: []
     };
   },
@@ -42,18 +44,31 @@ export default {
 .box {
   display: inline-block;
   margin: 10px;
+  backface-visibility: hidden;
+  z-index: 1;
+  line-height: 120px;
 }
-.slideLeft-item {
-  display: inline-block;
-  margin-right: 10px;
+
+/* moving */
+.slideLeft-move {
+  transition: all 0.6s ease-in-out 0.05s;
 }
-.slideLeft-enter-active,
+
+/* appearing */
+.slideLeft-enter-active {
+  transition: all 0.4s ease-out;
+}
+
+/* disappearing */
 .slideLeft-leave-active {
-  transition: all 1s;
+  transition: all 0.2s ease-in;
+  position: absolute;
+  z-index: 0;
 }
+
+/* appear at / disappear to */
 .slideLeft-enter,
 .slideLeft-leave-to {
   opacity: 0;
-  transform: translateX(80px);
 }
 </style>
