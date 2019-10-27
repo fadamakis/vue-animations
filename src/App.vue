@@ -9,9 +9,9 @@
     <CardAppearAnimation />
     <ExpandCollapse />
     <Navigation />
+    <ProgressSteps />
 
     <h2>image hover</h2>
-    <h2>progress bar</h2>
     <h2>loader</h2>
   </div>
 </template>
@@ -24,6 +24,7 @@ import ModalTransitions from "./components/ModalTransitions.vue";
 import CardAppearAnimation from "./components/CardAppearAnimation.vue";
 import ExpandCollapse from "./components/ExpandCollapse.vue";
 import Navigation from "./components/Navigation.vue";
+import ProgressSteps from "./components/ProgressSteps.vue";
 
 export default {
   name: "app",
@@ -34,14 +35,13 @@ export default {
     ModalTransitions,
     CardAppearAnimation,
     ExpandCollapse,
-    Navigation
+    Navigation,
+    ProgressSteps
   }
 };
 </script>
 
 <style>
-
-
 #app {
   font-family: "Avenir", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
