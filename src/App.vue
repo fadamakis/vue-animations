@@ -1,18 +1,15 @@
 <template>
   <div id="app">
     <img alt="Vue logo" src="./assets/logo.png" width="120">
-    <h1>Vue.js Real Life Transitions &amp; microinteractions</h1>
+    <h1>Vue.js Real Life Transitions &amp; Microinteractions</h1>
     <SlideToggle />
     <StateTransitions />
     <ListTransitions />
     <ModalTransitions />
     <CardAppearAnimation />
     <ExpandCollapse />
-    <Navigation />
     <ProgressSteps />
-
-    <h2>image hover</h2>
-    <h2>loader</h2>
+    <Navigation />
   </div>
 </template>
 
