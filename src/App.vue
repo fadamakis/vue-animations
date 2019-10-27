@@ -8,6 +8,7 @@
     <ModalTransitions />
     <CardAppearAnimation />
     <ExpandCollapse />
+    <Navigation />
 
     <h2>image hover</h2>
     <h2>progress bar</h2>
@@ -22,6 +23,7 @@ import ListTransitions from "./components/ListTransitions.vue";
 import ModalTransitions from "./components/ModalTransitions.vue";
 import CardAppearAnimation from "./components/CardAppearAnimation.vue";
 import ExpandCollapse from "./components/ExpandCollapse.vue";
+import Navigation from "./components/Navigation.vue";
 
 export default {
   name: "app",
@@ -31,12 +33,15 @@ export default {
     ListTransitions,
     ModalTransitions,
     CardAppearAnimation,
-    ExpandCollapse
+    ExpandCollapse,
+    Navigation
   }
 };
 </script>
 
 <style>
+
+
 #app {
   font-family: "Avenir", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
