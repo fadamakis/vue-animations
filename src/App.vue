@@ -1,7 +1,10 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png" width="120">
+    <img alt="Vue logo" src="./assets/logo.png" width="120" />
     <h1>Vue.js Real Life Transitions &amp; Microinteractions</h1>
+    <a href="https://github.com/fadamakis/vue-animations" target="_blank"
+      >github.com/fadamakis/vue-animations
+    </a>
     <SlideToggle />
     <StateTransitions />
     <ListTransitions />
@@ -33,8 +36,8 @@ export default {
     CardAppearAnimation,
     ExpandCollapse,
     Navigation,
-    ProgressSteps
-  }
+    ProgressSteps,
+  },
 };
 </script>
 
