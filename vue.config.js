@@ -1,3 +1,3 @@
 module.exports = {
-    publicPath: '/vue-animations//'
+    publicPath: '/vue-animations/'
 }
