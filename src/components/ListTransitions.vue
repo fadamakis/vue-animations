@@ -14,7 +14,6 @@
       </transition-group>
 
       <button @click="shuffle">Shuffle</button>
-
     </article>
   </section>
 </template>
@@ -24,23 +23,23 @@ export default {
   data() {
     return {
       items: [1, 2, 3, 4, 5, 6, 7, 8, 9],
-      nextNum: 10
+      nextNum: 10,
     };
   },
   methods: {
-    randomIndex: function() {
+    randomIndex: function () {
       return Math.floor(Math.random() * this.items.length);
     },
-    add: function() {
+    add: function () {
       this.items.splice(this.randomIndex(), 0, this.nextNum++);
     },
-    remove: function() {
+    remove: function () {
       this.items.splice(this.randomIndex(), 1);
     },
     shuffle() {
       this.items.sort(() => Math.random() - 0.5);
-    }
-  }
+    },
+  },
 };
 </script>
 
@@ -65,7 +64,7 @@ li {
   transition: all 0.3s;
 }
 
-.list-enter,
+.list-enter-from,
 .list-leave-to {
   opacity: 0;
   transform: scale(0);

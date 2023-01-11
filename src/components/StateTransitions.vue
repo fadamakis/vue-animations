@@ -5,8 +5,16 @@
         <h2>Toggle between two buttons</h2>
       </header>
       <transition name="fade" mode="out-in">
-        <button @click="toggle('inPlace')" v-if="!isHidden('inPlace')" key="first">First State</button>
-        <button @click="toggle('inPlace')" v-else key="second">Second State</button>
+        <button
+          @click="toggle('inPlace')"
+          v-if="!isHidden('inPlace')"
+          key="first"
+        >
+          First State
+        </button>
+        <button @click="toggle('inPlace')" v-else key="second">
+          Second State
+        </button>
       </transition>
     </article>
     <article>
@@ -15,7 +23,12 @@
       </header>
       <button @click="toggle('box')">Toggle State</button>
       <transition name="bounce" mode="out-in">
-        <div class="box" style="background: #5bb984" v-if="!isHidden('box')" key="first"></div>
+        <div
+          class="box"
+          style="background: #5bb984"
+          v-if="!isHidden('box')"
+          key="first"
+        ></div>
         <div class="box" style="background: #35495e" v-else key="second"></div>
       </transition>
     </article>
@@ -25,7 +38,7 @@
 <script>
 import toggleVisibility from "../mixins/toggleVisibility.js";
 export default {
-  mixins: [toggleVisibility]
+  mixins: [toggleVisibility],
 };
 </script>
 
@@ -34,7 +47,7 @@ export default {
 .fade-leave-active {
   transition: opacity 0.3s;
 }
-.fade-enter,
+.fade-enter-from,
 .fade-leave-to {
   opacity: 0;
 }

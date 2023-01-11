@@ -7,8 +7,8 @@
       <button @click="shown++">Add</button>
       <button @click="shown--">Remove</button>
       <div>
-        <transition-group name="slideLeft">
-          <div class="box" v-for="index in shown" :key="index">{{index}}</div>
+        <transition-group name="slideLeft" tag="span">
+          <div class="box" v-for="index in shown" :key="index">{{ index }}</div>
         </transition-group>
       </div>
     </article>
@@ -20,23 +20,23 @@ export default {
   data() {
     return {
       shown: 2,
-      hidden: []
+      hidden: [],
     };
   },
   computed: {
     isHidden() {
-      return type => this.hidden.includes(type);
-    }
+      return (type) => this.hidden.includes(type);
+    },
   },
   methods: {
     toggle(type) {
       if (this.isHidden(type)) {
-        this.hidden = this.hidden.filter(v => v !== type);
+        this.hidden = this.hidden.filter((v) => v !== type);
       } else {
         this.hidden.push(type);
       }
-    }
-  }
+    },
+  },
 };
 </script>
 
@@ -67,7 +67,7 @@ export default {
 }
 
 /* appear at / disappear to */
-.slideLeft-enter,
+.slideLeft-enter-from,
 .slideLeft-leave-to {
   opacity: 0;
 }

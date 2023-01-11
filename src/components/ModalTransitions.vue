@@ -24,7 +24,7 @@
 <script>
 import toggleVisibility from "../mixins/toggleVisibility.js";
 export default {
-  mixins: [toggleVisibility]
+  mixins: [toggleVisibility],
 };
 </script>
 
@@ -61,7 +61,7 @@ export default {
 }
 
 /* Animation part */
-.modal-enter {
+.modal-enter-from {
   opacity: 0;
 }
 

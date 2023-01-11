@@ -4,12 +4,15 @@
       <header>
         <h2>Expand/Collapse Animation</h2>
       </header>
-      <transition-group name="list">
-        <div class="row" v-for="index in visible" :key="index">Row {{index}}</div>
+      <transition-group name="list" tag="span">
+        <div class="row" v-for="index in visible" :key="index">
+          Row {{ index }}
+        </div>
       </transition-group>
 
-      <div class="action" @click="toggle()">{{ this.showAll ? 'collapse' : 'expand'}}</div>
-
+      <div class="action" @click="toggle()">
+        {{ this.showAll ? "collapse" : "expand" }}
+      </div>
     </article>
   </section>
 </template>
@@ -19,15 +22,15 @@ export default {
   data() {
     return {
       visible: 5,
-      showAll: false
+      showAll: false,
     };
   },
   methods: {
     toggle() {
       this.showAll = !this.showAll;
       this.visible = this.showAll ? 10 : 5;
-    }
-  }
+    },
+  },
 };
 </script>
 
@@ -48,7 +51,7 @@ export default {
 .list-leave-active {
   transition: all 0.5s;
 }
-.list-enter,
+.list-enter-from,
 .list-leave-to {
   opacity: 0;
   height: 0;
