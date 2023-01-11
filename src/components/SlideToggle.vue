@@ -31,7 +31,7 @@
 <script>
 import toggleVisibility from "../mixins/toggleVisibility.js";
 export default {
-  mixins: [toggleVisibility]
+  mixins: [toggleVisibility],
 };
 </script>
 
@@ -47,7 +47,7 @@ export default {
 .fade-leave-active {
   transition: opacity 0.3s;
 }
-.fade-enter,
+.fade-enter-from,
 .fade-leave-to {
   opacity: 0;
 }
@@ -63,11 +63,11 @@ export default {
 }
 
 .slide-enter-to,
-.slide-leave {
+.slide-leave-from {
   overflow: hidden;
 }
 
-.slide-enter,
+.slide-enter-from,
 .slide-leave-to {
   overflow: hidden;
   height: 0;
